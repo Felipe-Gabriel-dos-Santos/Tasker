@@ -15,6 +15,4 @@ import lombok.Setter;
 @Getter @Setter
 public class TaskStatus extends BaseEntity {
     private String status;
-    @OneToMany(mappedBy = "status")
-    private List<Task> tasks;
 }
